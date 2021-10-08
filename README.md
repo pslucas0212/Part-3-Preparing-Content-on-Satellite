@@ -125,8 +125,19 @@ On the Content Views screen click the link Content View name.
   
 ![Content View Name](/images/sat26.png)
   
-You'll now see the content being published to the Content View.
+You will now see the content being published to the Content View.
 ![Content View Publishing](/images/sat27.png)
+
+Let's promote the repository from the Library to the...
+```
+# hammer content-view version promote \
+--content-view "cv-rhel8-prem-server" \
+--to-lifecycle-environment "le-ops-rhel8-prem-server" \
+--organization "Operations Department" \
+--async
+Content view is being promoted with task bdf2dba3-c4dd-4a66-8e82-a9fbd71b4298.
+```
+You can follow the previous steps to see the content publication progress.  
   
 
 ## References  
