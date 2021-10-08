@@ -46,7 +46,6 @@ See the following table for the RHEL 7 repositories we will enable.  Follow the 
 
 Name | Repository
 ---- | ----------
-Red Hat Enterprise Linux 7 Server - Extended Update Support (RPMs) | rhel-7-server-eus-rpms
 Red Hat Enterprise Linux 7 Server - Extras (RPMs) | rhel-7-server-extras-rpms
 Red Hat Enterprise Linux 7 Server - Optional (RPMs) | rhel-7-server-optional-rpms
 Red Hat Enterprise Linux 7 Server (RPMs) | rhel-7-server-rpms
