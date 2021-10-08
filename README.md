@@ -71,7 +71,8 @@ After your content has completed synching, we will create a content lifecycle.  
 
 Lets create our first lifecyce environment and link it to the Operations Deparment
 ```
-  # hammer lifecycle-environment create --description le-ops-rhel8-prem-server --prior Library --name le-ops-rhel8-prem-server --organization "Operations Department"
+# hammer lifecycle-environment create --description le-ops-rhel8-prem-server --prior Library --name le-ops-rhel8-prem-server --organization "Operations Department"
+Environment created.
 ```
 You can list the any lifeccycle environements with the following command.
 ```
@@ -83,6 +84,7 @@ If you want to only list information for an particular organization add the --or
 Next we will add a content view to the lifecycle environment.  Content view allows to control the specific content made available to environments
 ```
 # hammer content-view create --description cv-rhel8-prem-server --name cv-rhel8-prem-server --organization "Operations Department"
+Content view created.
 ```
 
  We want to add the repositories to the content view.  For this we need the repository ID.  The following command provides "shorter" view of the repositories listing only the repository ID and name
