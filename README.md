@@ -52,6 +52,20 @@ Red Hat Enterprise Linux 7 Server (RPMs) | rhel-7-server-rpms
 Red Hat Satellite Maintenance 6 (for RHEL 7 Server) (RPMs) | rhel-7-server-satellite-maintenance-6-rpms
 Red Hat Satellite Tools 6.9 (for RHEL 7 Server) (RPMs) | rhel-7-server-satellite-tools-6.9-rpms
 
+We have chosen the content we need to manage for our RHEL environment.  Now we need to synch that content to Satellite.  We will "manually" synch the content.  You can create synch plan, but we won't be covering creating a synch plan in this tutorial.  
+
+On the right naviagtion bar click Content -> Synch Status
+
+![Content -> Synch Status](/images/sat22.png)
+
+On the Synch Status page click on the Expand All and Select All links.  And click the Synchronize Now button.
+
+![Synch Status Screen](/images/sat23.png)
+
+The Synch Status screen will now show the progress of synching all of the repositories to Satellite.  
+
+![Synch Status Screen in action](/images/sat24.png)
+
 
 ## References
 [Understanding Red Hat Content Delivery Network Repositories and their usage with Satellite 6](https://access.redhat.com/articles/1586183)
