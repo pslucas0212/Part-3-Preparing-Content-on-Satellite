@@ -24,7 +24,7 @@ Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs) | rhel-8-for-x86_64-app
 Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs) | rhel-8-for-x86_64-baseos-rpms
 Red Hat Satellite Tools 6.9 for RHEL 8 x86_64 (RPMs) | satellite-tools-6.9-for-rhel-8-x86_64-rpms
 
-![Red Hat Repositories Search Results](/images/sat17.png)
+![Red Hat Repositories Search Results RHEL 8](/images/sat17.png)
 
 To enable a repository, click the twisty icon to the left of the repository name and then click the blue plus icom. If you hover over the blue plus icon you will see a pop up text that says enable.  It is recommended to enable the version release of a RHEL repository and not the point release.  We chose the version release of the RHEL repository as it contains all errata from GA until that release is no longer supported.
 
@@ -38,6 +38,20 @@ Repeat the steps above to enable the other RHEL 8 repositories.  When you are fi
 
 ![All RHEL 8 Enabled Repositories](/images/sat20.png)
 
+We will now enable some RHEL 7 repositories.  This time enter RHEL 7 in the search field, click the Search button and then toggle Recommended Repositories switch to On.  
+
+![Red Hat Repositories Search Results RHEL 7](/images/sat21.png)
+
+See the following table for the RHEL 7 repositories we will enable.  Follow the steps above to enable each repository. 
+
+Name | Repository
+---- | ----------
+Red Hat Enterprise Linux 7 Server - Extended Update Support (RPMs) | rhel-7-server-eus-rpms
+Red Hat Enterprise Linux 7 Server - Extras (RPMs) | rhel-7-server-extras-rpms
+Red Hat Enterprise Linux 7 Server - Optional (RPMs) | rhel-7-server-optional-rpms
+Red Hat Enterprise Linux 7 Server (RPMs) | rhel-7-server-rpms
+Red Hat Satellite Maintenance 6 (for RHEL 7 Server) (RPMs) | rhel-7-server-satellite-maintenance-6-rpms
+Red Hat Satellite Tools 6.9 (for RHEL 7 Server) (RPMs) | rhel-7-server-satellite-tools-6.9-rpms
 
 
 ## References
