@@ -62,7 +62,7 @@ On the Synch Status page click on the Expand All and Select All links.  And clic
 
 ![Synch Status Screen](/images/sat23.png)
 
-The Synch Status screen will now show the progress of synching all of the repositories to Satellite.  
+The Synch Status screen will now show the progress of synching all of the repositories to Satellite.  Since this is the first time you are synching content, it take a bit of time to complete.  You will likely want to investigate creating a synch plan to schedule synchronizing content during times where your network traffic is less.
 
 ![Synch Status Screen in action](/images/sat24.png)
 
