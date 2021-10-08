@@ -34,7 +34,7 @@ After you click the blue plus sign, you will see the selected repository is now 
 
 ![Enabled Repositories](/images/sat19.png)
 
-Repeat the steps above to enable the other RHEL 8 repositories
+Repeat the steps above to enable the other RHEL 8 repositories.  When you are finished, the Satellite console should look like the screen shot below.
 
 ![All RHEL 8 Enabled Repositories](/images/sat20.png)
 
