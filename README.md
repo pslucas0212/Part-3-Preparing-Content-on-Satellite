@@ -67,5 +67,5 @@ The Synch Status screen will now show the progress of synching all of the reposi
 ![Synch Status Screen in action](/images/sat24.png)
 
 
-## References
+## References  
 [Understanding Red Hat Content Delivery Network Repositories and their usage with Satellite 6](https://access.redhat.com/articles/1586183)
