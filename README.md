@@ -67,7 +67,45 @@ The Synch Status screen will now show the progress of synching the repositories 
 ![Synch Status Screen in action](/images/sat24.png)
 
 ### Creating Content Lifecycles in Satellite
-After your content has completed synching, we will create a content lifecycle.  To give you some command line experience, we will do all the Lifecycle work from the command line.
+After your content has completed synching, we will create a content lifecycle.  Content lifecycles gives you the ability match RHEL errata to RHEL servers running in particular environment too match your SDLC.  You may simple or complex lifecycles for your RHEL servers, and Satellite give you the ability easily create and manage those RHE server lifecycles.   In the following section will you use the command to create the lifecyce environment in Satellite.
 
+Lets create our first lifecyce environment and link it to the Operations Deparment
+```
+  # hammer lifecycle-environment create --description le-ops-rhel8-prem-server --prior Library --name le-ops-rhel8-prem-server --organization "Operations Department"
+```
+You can list the any lifeccycle environements with the following command.
+```
+# hammer lifecyce-environment list
+```  
+
+If you want to only list information for an particular organization add the --organization <organziation name> to the command.  
+  
+Next we will add a content view to the lifecycle environment.  Content view allows to control the specific content made available to environments
+```
+# hammer content-view create --description cv-rhel8-prem-server --name cv-rhel8-prem-server --organization "Operations Department"
+```
+
+ We want to add the repositories to the content view.  For this we need the repository ID.  The following command provides "shorter" view of the repositories listing only the repository ID and name
+  ```
+ hammer repository list --fields THIN --organization-label operations
+---|-----------------------------------------------------------------
+ID | NAME                                                            
+---|-----------------------------------------------------------------
+5  | Red Hat Enterprise Linux 7 Server - Extras RPMs x86_64          
+6  | Red Hat Enterprise Linux 7 Server - Optional RPMs x86_64 7Server
+7  | Red Hat Enterprise Linux 7 Server RPMs x86_64 7Server           
+2  | Red Hat Enterprise Linux 8 for x86_64 - AppStream RPMs 8        
+3  | Red Hat Enterprise Linux 8 for x86_64 - BaseOS RPMs 8           
+8  | Red Hat Satellite Maintenance 6 for RHEL 7 Server RPMs x86_64   
+9  | Red Hat Satellite Tools 6.9 for RHEL 7 Server RPMs x86_64       
+4  | Red Hat Satellite Tools 6.9 for RHEL 8 x86_64 RPMs              
+---|-----------------------------------------------------------------
+```
+
+For the RHEL content view we need IDs 2, 3 and 4.
+```
+# hammer content-view update --repository-ids 2,3,4 --name "cv-rhel8-prem-server" --organization "Operations Department"
+Content view updated.
+```
 ## References  
 [Understanding Red Hat Content Delivery Network Repositories and their usage with Satellite 6](https://access.redhat.com/articles/1586183)
