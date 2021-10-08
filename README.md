@@ -26,7 +26,7 @@ Red Hat Satellite Tools 6.9 for RHEL 8 x86_64 (RPMs) | satellite-tools-6.9-for-r
 
 ![Red Hat Repositories Search Results](/images/sat17.png)
 
-To enable a repository, click the twisty to the left of the repository name and the click the blue plus. If you hover over the blue plus you will see pop up that says enable.  It is recommended enable the version release of a RHEL repository and not the point release.
+To enable a repository, click the twisty icon to the left of the repository name and then click the blue plus. If you hover over the blue plus icon you will see pop up text that says enable.  It is recommended ot enable the version release of a RHEL repository and not the point release.
 
 ![Expand Twisty](/images/sat18.png)
 
