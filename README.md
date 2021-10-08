@@ -16,7 +16,7 @@ We will first searh for RHEL 8 repositories.  Enter RHEL 8 x86_64 in the search 
 
 ![Red Hat Repositories Search](/images/sat16.png)
 
-You will now see a smaller set of repositories.  We will be adding three RHEL 8 Repositories:
+You will now see a smaller set of repositories.  We will be enabling three RHEL 8 Repositories:
 
 Name | Repository
 ---- | ----------
@@ -26,7 +26,13 @@ Red Hat Satellite Tools 6.9 for RHEL 8 x86_64 (RPMs) | satellite-tools-6.9-for-r
 
 ![Red Hat Repositories Search Results](/images/sat17.png)
 
+To enable a repository, click the twisty to the left of the repository name and the click the blue plus. If you hover over the blue plus you will see pop up that says enable.  
 
+![Expand Twisty](/images/sat18.png)
+
+After you click the blue plus sign, you will see the selected repository is now in the right column titled Enabled Repositories
+
+![Enabled Repositories](/images/sat19.png)
 
 
 
