@@ -79,7 +79,7 @@ You can list the any lifeccycle environements with the following command.
 # hammer lifecyce-environment list
 ```  
 
-If you want to only list information for an particular organization add the --organization <organziation name> to the command.  
+If you want to only list information for a particular organization add the --organization <organziation name> to the command.  
   
 Next we will add a content view to the lifecycle environment.  Content view allows to control the specific content made available to environments
 ```
@@ -111,5 +111,23 @@ For the RHEL content view we need IDs 2, 3 and 4.
 # hammer content-view update --repository-ids 2,3,4 --name "cv-rhel8-prem-server" --organization "Operations Department"
 Content view updated.
 ```
+  
+Next we will publish the repositories to the library.  This will take a few minutes while the content is being published to the content view.
+```
+# hammer content-view publish --name "cv-rhel8-prem-server" --organization "Operations Department" --async
+Content view is being published with task c050e764-25da-43b2-8a23-9122af5a9120.
+```
+We can jump back to the console to view the content being published.  On the left side navigation bar chose Content -> Content View.
+  
+![Content -> Content View](/images/sat25.png)
+  
+On the Content Views screen click the link Content View name.
+  
+![Content View Name](/images/sat26.png)
+  
+You'll now see the content being published to the Content View.
+![Content View Publishing](/images/sat27.png)
+  
+
 ## References  
 [Understanding Red Hat Content Delivery Network Repositories and their usage with Satellite 6](https://access.redhat.com/articles/1586183)
