@@ -2,13 +2,13 @@
 
 Part 3: Preparing Content on Satellite
 
-In the section we will learning about managing content for our RHEL environment.  We will add RHEL repositories to Satellite and define RHEL patching lifecycles.  
+In the section we will learning about managing content for our RHEL environment.  We will enable RHEL repositories on Satellite and define RHEL patching lifecycles.  
 
 ### Adding Software Repositories to Satellite. 
 
 For our tutorial we will enable both RHEL 7 and RHEL 8 repositoires to Satellite.  
 
-Loging to the Satellite console and on the right menu bart navigate to Conent -> Red Hat Repositories.  Make sure that your organization and location is set Operations Department and moline.  Remember Organization and Location are located in the upper left area of the Satellite console
+Loging to the Satellite console and on the right menu navigate to Conent -> Red Hat Repositories.  Make sure that your organization and location is set Operations Department and moline.  Remember Organization and Location are located in the upper left area of the Satellite console
 
 ![Content -> Red Hat Repositories](/images/sat15.png)
 
@@ -26,7 +26,7 @@ Red Hat Satellite Tools 6.9 for RHEL 8 x86_64 (RPMs) | satellite-tools-6.9-for-r
 
 ![Red Hat Repositories Search Results](/images/sat17.png)
 
-To enable a repository, click the twisty icon to the left of the repository name and then click the blue plus. If you hover over the blue plus icon you will see pop up text that says enable.  It is recommended ot enable the version release of a RHEL repository and not the point release.
+To enable a repository, click the twisty icon to the left of the repository name and then click the blue plus icom. If you hover over the blue plus icon you will see a pop up text that says enable.  It is recommended to enable the version release of a RHEL repository and not the point release.  We chose the version release of the RHEL repository as it contains all errata from GA until that release is no longer supported.
 
 ![Expand Twisty](/images/sat18.png)
 
