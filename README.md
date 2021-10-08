@@ -86,8 +86,10 @@ Next we will add a content view to the lifecycle environment.  Content view allo
 ```
 
  We want to add the repositories to the content view.  For this we need the repository ID.  The following command provides "shorter" view of the repositories listing only the repository ID and name
-  ```
- hammer repository list --fields THIN --organization-label operations
+ 
+
+ ```
+# hammer repository list --fields THIN --organization-label operations
 ---|-----------------------------------------------------------------
 ID | NAME                                                            
 ---|-----------------------------------------------------------------
