@@ -137,8 +137,10 @@ Let's promote the repository from the Library to the...
 --async
 Content view is being promoted with task bdf2dba3-c4dd-4a66-8e82-a9fbd71b4298.
 ```
-You can follow the previous steps to see the content publication progress.  
+When the update has completed, you will see two environments listed in the Satellite console under Content -> Content Views. In the Content Views page in the Environments section you will see Library and e-ops-rhel8-prem-server listed.
   
-
+TO-DO ???  Add screen shots and notes about reviewing the content view page.....
+  
+  
 ## References  
 [Understanding Red Hat Content Delivery Network Repositories and their usage with Satellite 6](https://access.redhat.com/articles/1586183)
