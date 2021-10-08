@@ -62,7 +62,7 @@ On the Synch Status page click on the Expand All and Select All links.  And clic
 
 ![Synch Status Screen](/images/sat23.png)
 
-The Synch Status screen will now show the progress of synching the repositories to Satellite.  Since this is the first time you are synching content, it will take a bit of time to complete.  You will likely want to look at creating a synch plan to schedule synchronizing content during times where your network traffic is less.
+The Synch Status screen will now show the progress of synching the repositories to Satellite.  Since this is the first time you are synching content, it will take a bit of time to complete.  You will likely want to look at creating a synch plan to schedule synchronizing content during times where your network traffic is less.  When a repository has completed synching, you will see a message next to the repo that says Synching Complete.  Note: for a lab practice run, you may want to only synch content for RHEL 7 or 8 and not both.
 
 ![Synch Status Screen in action](/images/sat24.png)
 
