@@ -14,4 +14,23 @@ Loging to the Satellite console and on the right menu bart navigate to Conent ->
 
 We will first searh for RHEL 8 repositories.  Enter RHEL 8 x86_64 in the search field, click the Search button and then toggle Recommended Repositories swith to On.  
 
-![Red Hat Repositories Searhc](/images/sat16.png)
+![Red Hat Repositories Search](/images/sat16.png)
+
+You will now see a smaller set of repositories.  We will be adding three RHEL 8 Repositories:
+
+Name | Repository
+---- | ----------
+Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs) | rhel-8-for-x86_64-appstream-rpms
+Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs) | rhel-8-for-x86_64-baseos-rpms
+Red Hat Satellite Tools 6.9 for RHEL 8 x86_64 (RPMs) | satellite-tools-6.9-for-rhel-8-x86_64-rpms
+
+![Red Hat Repositories Search Results](/images/sat17.png)
+
+
+
+
+
+
+
+## References
+[Understanding Red Hat Content Delivery Network Repositories and their usage with Satellite 6](https://access.redhat.com/articles/1586183)
