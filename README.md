@@ -128,7 +128,7 @@ On the Content Views screen click the link Content View name.
 You will now see the content being published to the Content View.
 ![Content View Publishing](/images/sat27.png)
 
-Let's promote the repository from the Library to the le-ops-rhel8-prem-server lifecycle environment
+Let's promote the content view from the Library to the le-ops-rhel8-prem-server lifecycle environment
 ```
 # hammer content-view version promote \
 --content-view "cv-rhel8-prem-server" \
