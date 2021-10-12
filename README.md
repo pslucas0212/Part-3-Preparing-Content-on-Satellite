@@ -162,7 +162,7 @@ Finally we will create an activation key for registering our RHEL instances with
   Activation key created.
   ```  
 In the console we can view the Activation Key on the Red Hat Satellite console by navigating to Content -> Content Views on the left navigation bar.  
-!Content -> Activation Keys](/images/sat31.png)  
+![Content -> Activation Keys](/images/sat31.png)  
 
 On the Activation Keys page click the link for ak-ops-rhel8-prem-server activation key.  
 ![ak-ops-rhel8-prem-server link](/images/sat32.png)  
