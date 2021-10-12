@@ -148,7 +148,7 @@ On the Content Views page, click cv-rhel8-prem-server view link.
 ![Content Views click cv-rhel8-prem-server](/images/sat29.pnt)
   
 Observe on the cv-rhel8-prem-server page in the Environemtns column, you will see two environments: Library and le-ops-rhel8-prem-server listed.  
-![le-ops-rhel8-prem-server observe Environments](/images/sat30.png). 
+![le-ops-rhel8-prem-server observe Environments](/images/sat30.png)  
   
 All the steps above of course can be completed through the Red Hat Satellite console following the paths outlined with the screen images.  
   
@@ -161,8 +161,14 @@ Finally we will create an activation key for registering our RHEL instances with
   --organization "Operations Department"
   Activation key created.
   ```  
- In the console we can view the Activation Key on the Red Hat Satellite console by navigating to Content -> Content Views on the left navigation bar.
+In the console we can view the Activation Key on the Red Hat Satellite console by navigating to Content -> Content Views on the left navigation bar.  
+!Content -> Activation Keys](/images/sat31.png)  
+
+On the Activation Keys page click the link for ak-ops-rhel8-prem-server activation key.  
+![ak-ops-rhel8-prem-server link](/images/sat32.png)  
   
+Notice that ak-ops-rhel8-prem-server activation key is assigned to le-ops-rhel8-prem-server lifecycle environment.  
+![ale-ops-rhel8-prem-server page](/images/sat33.png)
   
 ## References  
 [Installing Satellite Server from a Connected Network](https://access.redhat.com/documentation/en-us/red_hat_satellite/6.9/html/installing_satellite_server_from_a_connected_network/index)   
