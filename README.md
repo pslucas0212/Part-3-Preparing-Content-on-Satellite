@@ -137,9 +137,31 @@ Let's promote the content view from the Library to the le-ops-rhel8-prem-server 
 --async
 Content view is being promoted with task bdf2dba3-c4dd-4a66-8e82-a9fbd71b4298.
 ```
-When the update has completed, you will see two environments listed in the Satellite console under Content -> Content Views. In the Content Views page in the Environments section you will see Library and e-ops-rhel8-prem-server listed.
+When the update has completed, you will see two environments listed in the Satellite console under Content -> Content Views. In the Content Views page in the Environments section you will see Library and le-ops-rhel8-prem-server listed.
   
-TO-DO ???  Add screen shots and notes about reviewing the content view page.....
+Let's go back to the Satellite console to see which life cycle environments have the cv-rhel8-prem-server content view.  Make sure you have Operations Department for your organziation and moline for your location.  
+  
+If you are not in the Content view, click Content -> Content View on the left naviagtion bar.  
+![Content -> Content View](/images/sat28.png)
+  
+On the Content Views page, click cv-rhel8-prem-server view link.  
+![Content Views click cv-rhel8-prem-server](/images/sat29.pnt)
+  
+Observe on the cv-rhel8-prem-server page in the Environemtns column, you will see two environments: Library and le-ops-rhel8-prem-server listed.  
+![le-ops-rhel8-prem-server observe Environments](/images/sat30.png). 
+  
+All the steps above of course can be completed through the Red Hat Satellite console following the paths outlined with the screen images.  
+  
+Finally we will create an activation key for registering our RHEL instances with Satellite and ultimately RHSM.  At the command line we will create an activation key with the following command.  
+```
+  # hammer activation-key create \
+  --content-view "cv-rhel8-prem-server" \
+  --lifecycle-environment "le-ops-rhel8-prem-server" \
+  --name "ak-ops-rhel8-prem-server" \
+  --organization "Operations Department"
+  Activation key created.
+  ```  
+ In the console we can view the Activation Key on the Red Hat Satellite console by navigating to Content -> Content Views on the left navigation bar.
   
   
 ## References  
