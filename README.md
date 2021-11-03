@@ -4,7 +4,7 @@
 
 Part 3: Preparing Content on Satellite
 
-In the section we will learning about managing content for our RHEL environment.  We will enable RHEL repositories on Satellite and define RHEL patching lifecycles.  
+In the section we will configure Satellite to manage content for our RHEL environment.  We will enable RHEL repositories on Satellite and define RHEL patching lifecycles.  
 
 ### Adding Software Repositories to Satellite. 
 
