@@ -8,9 +8,9 @@ In the section we will configure Satellite to manage content for our RHEL enviro
 
 ### Adding Software Repositories to Satellite. 
 
-For our tutorial we will enable both RHEL 7 and RHEL 8 repositoires to Satellite.  
+We will be only using RHEL 8 content for this tutorial, but we will enable both RHEL 7 and RHEL 8 repositoires to Satellite for practice.
 
-Loging to the Satellite console and on the right menu navigate to Conent -> Red Hat Repositories.  Make sure that your organization and location is set Operations Department and moline.  Remember Organization and Location are located in the upper left area of the Satellite console
+Login to the Satellite console and on the side menu navigate to Conent -> Red Hat Repositories.  Make sure that your organization and location is set Operations Department and moline.  Remember Organization and Location are located in the upper left area of the Satellite console
 
 ![Content -> Red Hat Repositories](/images/sat15.png)
 
