@@ -14,7 +14,7 @@ Login to the Satellite console and on the side menu navigate to Conent -> Red Ha
 
 ![Content -> Red Hat Repositories](/images/sat15.png)
 
-We will first search for RHEL 8 repositories.  Enter RHEL 8 x86_64 in the search field, click the Search button and then toggle Recommended Repositories swith to On.  
+We will first search for RHEL 8 repositories.  Enter RHEL 8 x86_64 in the Available search field and then click the Search button. Now toggle the Recommended Repositories switch to On.  
 
 ![Red Hat Repositories Search](/images/sat16.png)
 
@@ -28,7 +28,7 @@ Red Hat Satellite Tools 6.9 for RHEL 8 x86_64 (RPMs) | satellite-tools-6.9-for-r
 
 ![Red Hat Repositories Search Results RHEL 8](/images/sat17.png)
 
-To enable a repository, click the twisty icon to the left of the repository name and then click the blue plus icom. If you hover over the blue plus icon you will see a pop up text that says enable.  It is recommended to enable the version release of a RHEL repository and not the point release.  We chose the version release of the RHEL repository as it contains all errata from GA until that release is no longer supported.
+To enable a repository, click the twisty icon to the left of the repository name and then click the blue plus icon. If you hover your mouse point over the blue plus icon you will see a pop up text that says enable.  It is recommended to enable the version release of a RHEL repository and not the point release.  We chose the version release of the RHEL repository as it contains all errata from GA until that release is no longer supported.
 
 ![Expand Twisty](/images/sat18.png)
 
@@ -40,7 +40,7 @@ Repeat the steps above to enable the other RHEL 8 repositories.  When you are fi
 
 ![All RHEL 8 Enabled Repositories](/images/sat20.png)
 
-We will now enable some RHEL 7 repositories.  This time enter RHEL 7 in the search field, click the Search button and then toggle Recommended Repositories switch to On.  
+We will now enable some RHEL 7 repositories.  Enter RHEL 7 in the Available search field, click the Search button and then toggle Recommended Repositories switch to On.  
 
 ![Red Hat Repositories Search Results RHEL 7](/images/sat21.png)
 
@@ -54,9 +54,9 @@ Red Hat Enterprise Linux 7 Server (RPMs) | rhel-7-server-rpms
 Red Hat Satellite Maintenance 6 (for RHEL 7 Server) (RPMs) | rhel-7-server-satellite-maintenance-6-rpms
 Red Hat Satellite Tools 6.9 (for RHEL 7 Server) (RPMs) | rhel-7-server-satellite-tools-6.9-rpms
 
-We have chosen the content we need to manage for our RHEL environment.  Now we need to synch that content to Satellite.  We will "manually" synch the content.  You can create synch plan, but we won't be covering creating a synch plan in this tutorial.  
+We have chosen the content we need to manage for our RHEL environment.  Now we need to synch that content to Satellite.  We will "manually" synch the content.  You can create a synch plan, but we won't be covering synch plans in this tutorial.  
 
-On the right naviagtion bar click Content -> Synch Status
+On the side menu click Content -> Synch Status
 
 ![Content -> Synch Status](/images/sat22.png)
 
@@ -64,7 +64,7 @@ On the Synch Status page click on the Expand All and Select All links.  And clic
 
 ![Synch Status Screen](/images/sat23.png)
 
-The Synch Status screen will now show the progress of synching the repositories to Satellite.  Since this is the first time you are synching content, it will take a bit of time to complete.  You will likely want to look at creating a synch plan to schedule synchronizing content during times where your network traffic is less.  When a repository has completed synching, you will see a message next to the repo that says Synching Complete.  Note: for a lab practice run, you may want to only synch content for RHEL 7 or 8 and not both.
+The Synch Status screen will now show the progress of synching theses repositories to Satellite.  Since this is the first time you are synching content, it will take a bit of time to complete.  You will likely want to look at creating a synch plan to schedule synchronizing content during times where your network traffic is lower.  When a repository has completed synching, you will see a message next to the repo that says Synching Complete.  Note: For the purposes of this labe, you may want to only synch content for RHEL 8.
 
 ![Synch Status Screen in action](/images/sat24.png)
 
