@@ -14,7 +14,7 @@ Login to the Satellite console and on the side menu navigate to Conent -> Red Ha
 
 ![Content -> Red Hat Repositories](/images/sat15.png)
 
-We will first searh for RHEL 8 repositories.  Enter RHEL 8 x86_64 in the search field, click the Search button and then toggle Recommended Repositories swith to On.  
+We will first search for RHEL 8 repositories.  Enter RHEL 8 x86_64 in the search field, click the Search button and then toggle Recommended Repositories swith to On.  
 
 ![Red Hat Repositories Search](/images/sat16.png)
 
