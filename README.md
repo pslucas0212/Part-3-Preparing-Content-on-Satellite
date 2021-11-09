@@ -64,12 +64,12 @@ On the Synch Status page click on the Expand All and Select All links.  And clic
 
 ![Synch Status Screen](/images/sat23.png)
 
-The Synch Status screen will now show the progress of synching theses repositories to Satellite.  Since this is the first time you are synching content, it will take a bit of time to complete.  You will likely want to look at creating a synch plan to schedule synchronizing content during times where your network traffic is lower.  When a repository has completed synching, you will see a message next to the repo that says Synching Complete.  Note: For the purposes of this labe, you may want to only synch content for RHEL 8.
+The Synch Status screen will now show the progress of synching theses repositories to Satellite.  Since this is the first time you are synching content, it will take a bit of time to complete.  You will likely want to look at creating a synch plan to schedule synchronizing content during times where your network traffic is lower.  When a repository has completed synching, you will see a message next to the repo that says Synching Complete.  Note: For the purposes of this lab, you may want to only synch content for RHEL 8.
 
 ![Synch Status Screen in action](/images/sat24.png)
 
 ### Creating Content Lifecycles in Satellite
-After your content has completed synching, we will create a content lifecycle.  Content lifecycles gives you the ability match RHEL errata to RHEL servers running in particular environment too match your SDLC.  You may simple or complex lifecycles for your RHEL servers, and Satellite give you the ability easily create and manage those RHE server lifecycles.   In the following section will you use the command to create the lifecyce environment in Satellite.
+After your content has completed synching, we will create a content lifecycle.  Content lifecycles gives you the ability match RHEL errata to RHEL servers running in particular environment too match your SDLC.  You may simple or complex lifecycles for your RHEL servers, and Satellite gives you the ability easily create and manage those RHE server lifecycles.   In the following section will you use the command to create the lifecyce environment in Satellite.
 
 Lets create our first lifecyce environment and link it to the Operations Deparment
 ```
@@ -89,7 +89,7 @@ Next we will add a content view to the lifecycle environment.  Content view allo
 Content view created.
 ```
 
- We want to add the repositories to the content view.  For this we need the repository ID.  The following command provides "shorter" view of the repositories listing only the repository ID and name
+ We want to add the repositories to the content view.  For this we need the repository ID.  The following command provides you with a "shorter" view of the repositories listing only the repository ID and name
  
 
  ```
@@ -108,7 +108,7 @@ ID | NAME
 ---|-----------------------------------------------------------------
 ```
 
-For the RHEL content view we need IDs 2, 3 and 4.
+In this example, for the RHEL 8 content view we need repository IDs 2, 3 and 4.  Your ID list maybe different.
 ```
 # hammer content-view update --repository-ids 2,3,4 --name "cv-rhel8-prem-server" --organization "Operations Department"
 Content view updated.
