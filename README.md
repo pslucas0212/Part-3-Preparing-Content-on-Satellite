@@ -147,7 +147,7 @@ If you are not in the Content view, click Content -> Content View on the left na
 ![Content -> Content View](/images/sat28.png)
   
 On the Content Views page, click cv-rhel8-prem-server view link.  
-![Content Views click cv-rhel8-prem-server](/images/sat29.pnt)
+![Content Views click cv-rhel8-prem-server](/images/sat29.png)
   
 Observe on the cv-rhel8-prem-server page in the Environemtns column, you will see two environments: Library and le-ops-rhel8-prem-server listed.  
 ![le-ops-rhel8-prem-server observe Environments](/images/sat30.png)  
