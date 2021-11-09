@@ -119,7 +119,7 @@ Next we will publish the repositories to the library.  This will take a few minu
 # hammer content-view publish --name "cv-rhel8-prem-server" --organization "Operations Department" --async
 Content view is being published with task c050e764-25da-43b2-8a23-9122af5a9120.
 ```
-We can jump back to the Satellite console to view the content being published.  On the left side navigation bar chose Content -> Content View.
+We can jump back to the Satellite console to view the content being published.  On the left side menu chose Content -> Content View.
   
 ![Content -> Content View](/images/sat25.png)
   
@@ -163,7 +163,7 @@ Finally we will create an activation key for registering our RHEL instances with
   --organization "Operations Department"
   Activation key created.
   ```  
-In the console we can view the Activation Key on the Red Hat Satellite console by navigating to Content -> Content Views on the left navigation bar.  
+In the console we can view the Activation Key on the Red Hat Satellite console by navigating to Content -> Content Views on the side menu.  
 ![Content -> Activation Keys](/images/sat31.png)  
 
 On the Activation Keys page click the link for ak-ops-rhel8-prem-server activation key.  
