@@ -2,15 +2,13 @@
 
 [Tutorial Menu](https://github.com/pslucas0212/RedHat-Satellite-VM-Provisioning-to-vSphere-Tutorial)  
 
-Part 3: Preparing Content on Satellite
-
 In the section we will configure Satellite to manage content for our RHEL environment.  We will enable RHEL repositories on Satellite and define a RHEL lifecycle.  
 
 ### Adding Software Repositories to Satellite. 
 
-We will be only using RHEL 8 content for this tutorial, but we will enable both RHEL 7 and RHEL 8 repositoires to Satellite for practice.
+We will be only using RHEL 8 content for this tutorial, but we will enable both RHEL 7 and RHEL 8 repositories to Satellite for practice.
 
-Login to the Satellite console and on the side menu navigate to Conent -> Red Hat Repositories.  Make sure that your organization and location is set Operations Department and moline.  Remember Organization and Location are located in the upper left area of the Satellite console
+Login to the Satellite console and on the side menu navigate to Content -> Red Hat Repositories.  Make sure that your organization and location is set to the Operations Department and moline.  Remember Organization and Location are located in the upper left area of the Satellite console
 
 ![Content -> Red Hat Repositories](/images/sat15.png)
 
@@ -36,7 +34,7 @@ After you click the blue plus sign, you will see the selected repository is now 
 
 ![Enabled Repositories](/images/sat19.png)
 
-Repeat the steps above to enable the other RHEL 8 repositories.  When you are finished, the Satellite console should look like the screen shot below.
+Repeat the steps above to enable the other RHEL 8 repositories.  When you are finished, the Satellite console should look like the screenshot below.
 
 ![All RHEL 8 Enabled Repositories](/images/sat20.png)
 
@@ -64,19 +62,19 @@ On the Synch Status page click on the Expand All and Select All links.  And clic
 
 ![Synch Status Screen](/images/sat23.png)
 
-The Synch Status screen will now show the progress of synching theses repositories to Satellite.  Since this is the first time you are synching content, it will take a bit of time to complete.  You will likely want to look at creating a synch plan to schedule synchronizing content during times where your network traffic is lower.  When a repository has completed synching, you will see a message next to the repo that says Synching Complete.  Note: For the purposes of this lab, you may want to only synch content for RHEL 8.
+TThe Synch Status screen will now show the progress of synching these repositories from the Red Hat Content Delivery Network to Satellite.  Since this is the first time you are synching content, it will take a bit of time to complete.  You will likely want to look at creating a synch plan to schedule synchronizing content during times where your network traffic is lower.  When a repository has completed synching, you will see a message next to the repo that says Synching Complete.  Note: For the purposes of this lab, you may want to only synch content for RHEL 8.
 
 ![Synch Status Screen in action](/images/sat24.png)
 
 ### Creating Content Lifecycles in Satellite
-After your content has completed synching, we will create a content lifecycle.  Content lifecycles gives you the ability match RHEL errata to RHEL servers running in particular environment too match your SDLC.  You may simple or complex lifecycles for your RHEL servers, and Satellite gives you the ability easily create and manage those RHE server lifecycles.   In the following section will you use the command to create the lifecyce environment in Satellite.
+After your content has completed synching, we will create a content lifecycle.  Content lifecycles give you the ability to match RHEL errata to RHEL servers running in a particular environment to match your SDLC.  You may have simple or complex lifecycles for your RHEL servers, and Satellite gives you the ability to easily create and manage RHEL server lifecycles.   In the following section you will  use the command line to create the lifecycle environment in Satellite.
 
-Lets create our first lifecyce environment and link it to the Operations Deparment
+Lets create our first lifecyce environment and link it to the Operations Department
 ```
 # hammer lifecycle-environment create --description le-ops-rhel8-prem-server --prior Library --name le-ops-rhel8-prem-server --organization "Operations Department"
 Environment created.
 ```
-You can list the any lifeccycle environements with the following command.
+You can list the lifecycle environments with the following command.
 ```
 # hammer lifecyce-environment list
 ```  
@@ -108,7 +106,7 @@ ID | NAME
 ---|-----------------------------------------------------------------
 ```
 
-In this example, for the RHEL 8 content view we need repository IDs 2, 3 and 4.  Your ID list maybe different.
+In this example, for the RHEL 8 content view we need repository IDs 2, 3 and 4.  Your ID list may be different.
 ```
 # hammer content-view update --repository-ids 2,3,4 --name "cv-rhel8-prem-server" --organization "Operations Department"
 Content view updated.
@@ -141,15 +139,15 @@ Content view is being promoted with task bdf2dba3-c4dd-4a66-8e82-a9fbd71b4298.
 ```
 When the update has completed, you will see two environments listed in the Satellite console under Content -> Content Views. In the Content Views page in the Environments section you will see Library and le-ops-rhel8-prem-server listed.
   
-Let's go back to the Satellite console to see which life cycle environments have the cv-rhel8-prem-server content view.  Make sure you have Operations Department for your organziation and moline for your location.  
+Let's go back to the Satellite console to see which life cycle environments have the cv-rhel8-prem-server content view.  Make sure you have Operations Department for your organization and moline for your location.  
   
-If you are not in the Content view, click Content -> Content View on the left naviagtion bar.  
+If you are not in the Content view, click Content -> Content View on the side menu.  
 ![Content -> Content View](/images/sat28.png)
   
 On the Content Views page, click cv-rhel8-prem-server view link.  
 ![Content Views click cv-rhel8-prem-server](/images/sat29.png)
   
-Observe on the cv-rhel8-prem-server page in the Environemtns column, you will see two environments: Library and le-ops-rhel8-prem-server listed.  
+Observe on the cv-rhel8-prem-server page in the Environments column, you will see two environments: Library and le-ops-rhel8-prem-server listed.  
 ![le-ops-rhel8-prem-server observe Environments](/images/sat30.png)  
   
 All the steps above of course can be completed through the Red Hat Satellite console following the paths outlined with the screen images.  
